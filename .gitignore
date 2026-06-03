@@ -1,0 +1,41 @@
+# ============================================================
+# TimetableCraft — .gitignore
+# Never commit real credentials.
+# ============================================================
+
+# Streamlit secrets — KEEP REAL CREDENTIALS OUT OF GIT
+.streamlit/secrets.toml
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+.venv/
+venv/
+env/
+.env
+
+# IDE / OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Build / runtime artefacts
+exports/
+*.log
+.streamlit/logs/
+
+# SQLite default-backend database files (never commit live school data!)
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+timetablecraft.db*
+
+# Generated PDFs / spreadsheets (kept out of repo, recreated on demand)
+*.pdf
+*.xlsx
+!docs/**/*.pdf

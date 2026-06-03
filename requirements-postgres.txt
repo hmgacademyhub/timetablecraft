@@ -1,0 +1,14 @@
+# ============================================================
+# TimetableCraft — OPTIONAL Postgres backend dependencies
+# ============================================================
+# Install only if you want to use the PostgreSQL / Supabase /
+# Neon / Render Postgres backend instead of the default SQLite.
+#
+#   pip install -r requirements.txt
+#   pip install -r requirements-postgres.txt
+#
+# On Streamlit Cloud, if you want the Postgres backend, paste
+# the contents of this file UNDER the contents of requirements.txt
+# in your repo's main requirements.txt (or just append this one line):
+# ============================================================
+psycopg2-binary>=2.9.9,<3.0
