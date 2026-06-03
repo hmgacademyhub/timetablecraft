@@ -1,0 +1,25 @@
+# ============================================================
+# TimetableCraft — Streamlit theme & runtime config
+# HMG Technologies · HMG Concepts brand palette
+# ============================================================
+
+[theme]
+base                = "light"
+primaryColor        = "#1A56DB"   # HMG Blue
+backgroundColor     = "#FFFFFF"
+secondaryBackgroundColor = "#F0F4FF"
+textColor           = "#0F1923"
+font                = "sans serif"
+
+[server]
+headless            = true
+# Keep XSRF protection on; leave CORS at its safe default to avoid the
+# "enableCORS=false is not compatible with enableXsrfProtection=true" warning.
+enableXsrfProtection = true
+
+[browser]
+gatherUsageStats    = false
+
+[client]
+toolbarMode         = "minimal"
+showErrorDetails    = true
